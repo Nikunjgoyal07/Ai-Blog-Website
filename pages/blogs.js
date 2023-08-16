@@ -1,11 +1,15 @@
 import { createClient } from "next-sanity";
 import BlogItem from "@/components/BlogItem";
 import imageUrlBuilder from "@sanity/image-url";
+import Head from "next/head";
 
 export default function Blogs({ blogs }) {
   return (
     <>
     <div class="max-w-[85rem] px-4 pt-14 sm:px-6 lg:px-8 lg:pt-14 mx-auto">
+      <Head>
+        <title>Blog | The Next Big Thing</title>
+      </Head>
   <div class="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
     <h2 class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Read our latest news</h2>
     <p class="mt-1 text-gray-600 dark:text-gray-400">We&apos;ve helped some great companies brand, design and get to market.</p>

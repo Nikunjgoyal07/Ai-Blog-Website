@@ -15,21 +15,6 @@ export default function Slug({blogs}) {
   );
 }
 
-// export async function getServerSideProps(context) {
-//   const { slug } = context.query;
-//   const res = await fetch(`http://localhost:3000/api/mongus?slug=${slug}`);
-//   const data = await res.json();
-
-//   if (!data || data.length === 0) {
-//     return { notFound: true };
-//   }
-
-//   return {
-//     props: {
-//       data: decodeURIComponent(data[0].content),
-//     },
-//   };
-// }
 
 export async function getServerSideProps(context) {
   const { slug } = context.query;

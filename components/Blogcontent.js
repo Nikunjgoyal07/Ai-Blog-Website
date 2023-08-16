@@ -1,12 +1,14 @@
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
+import Head from "next/head";
+// import Script from "next/script";
 
 export default function Blogcontent(props) {
   const date = new Date(props._createdAt);
   const formattedDate = `${date.getDate()} ${date.toLocaleString("default", {
     month: "long",
   })} ${date.getFullYear()}`;
-  console.log(props.imageUrl);
+  // console.log(props.imageUrl);
   const components = {
     block: {
       // Ex. 1: customizing common block types
@@ -54,6 +56,13 @@ export default function Blogcontent(props) {
         <h1 className="text-4xl font-bold leadi md:text-5xl font-sans mb-3">{props.title}</h1>
         <time dateTime="2021-02-12 15:34:18-0200">{formattedDate}</time>
       </div>
+      <Head>
+        <title>{props.title}</title>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4208857816426904"
+     crossorigin="anonymous"></script>
+      </Head>
+      {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4208857816426904"
+     crossorigin="anonymous" /> */}
 	  <Image
           src={props.imageUrl}
           className="object-cover w-full rounded "
