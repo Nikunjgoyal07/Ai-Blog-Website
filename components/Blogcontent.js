@@ -58,8 +58,6 @@ export default function Blogcontent(props) {
       </div>
       <Head>
         <title>{props.title}</title>
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4208857816426904"
-     crossorigin="anonymous"></script>
       </Head>
       {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4208857816426904"
      crossorigin="anonymous" /> */}
