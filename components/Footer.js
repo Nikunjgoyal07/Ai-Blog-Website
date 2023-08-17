@@ -1,5 +1,14 @@
+import { useRouter } from 'next/router';
+import { useState } from 'react';
+
+
 export default function Footer() {
+  const router = useRouter();
+  const [footercomp, setFootercomp] = useState(false);
+  // Check if it's the 404 page
+  const is404Page = router.pathname === '/404';
     return (
+      !is404Page && (
         <footer className="bg-gray-900">
         <div className="max-w-[85rem] py-10 px-4 sm:px-6 lg:px-8 lg:pt-20 mx-auto">
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6">
@@ -82,5 +91,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
+      )
     )
 }

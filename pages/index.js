@@ -1,7 +1,7 @@
 
-export default function Home({blogs}) {
+export default function Home() {
     return ( 
-     <div className="text-center py-10">hi</div>
+       <div className="text-center py-5">hi</div> 
     )
 }
 

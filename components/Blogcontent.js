@@ -8,7 +8,7 @@ export default function Blogcontent(props) {
   const formattedDate = `${date.getDate()} ${date.toLocaleString("default", {
     month: "long",
   })} ${date.getFullYear()}`;
-  // console.log(props.imageUrl);
+  // console.log(props.content);
   const components = {
     block: {
       // Ex. 1: customizing common block types
@@ -46,12 +46,14 @@ export default function Blogcontent(props) {
       underline: ({ children }) => <u>{children}</u>,
       strike: ({ children }) => <s>{children}</s>,
       code: ({ children }) => (
+        // <code className="bg-gray-200 p-1 rounded">{children}</code>
         <code className="bg-gray-200 p-1 rounded">{children}</code>
+        
       ),
     },
   };
   return (
-    <article className="max-w-4xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50 ">
+    <article className="max-w-4xl px-6 py-24 mx-auto space-y-12 ">
       <div className="w-full mx-auto space-y-4 text-center">
         <h1 className="text-4xl font-bold leadi md:text-5xl font-sans mb-3">{props.title}</h1>
         <time dateTime="2021-02-12 15:34:18-0200">{formattedDate}</time>
@@ -67,7 +69,7 @@ export default function Blogcontent(props) {
           width={1260}
           height={2000}
           alt=""/>
-      <div className="dark:text-gray-100">
+      <div >
         <PortableText value={props.content} components={components} />
       </div>
     </article>

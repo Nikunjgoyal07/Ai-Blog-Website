@@ -9,13 +9,17 @@ export default function BlogItem({ blog }) {
     return (
         <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
 
+<Link href={`/blogpost/${blog.slug.current}`} aria-label="Article">
+        
           <Image
-          src={blog.imageUrl}
-          className="object-cover w-full h-64 rounded"
-          width={1260}
-          height={750}
-          alt=""
-        />
+            src={blog.imageUrl}
+            className="object-cover w-full h-64 rounded"
+            width={1260}
+            height={750}
+            alt=""
+          />
+        
+      </Link>
           <div className="py-5">
             <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
               {formattedDate}
@@ -25,7 +29,7 @@ export default function BlogItem({ blog }) {
               aria-label="Article"
               className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
-              <p className="text-2xl font-bold leading-5">{blog.title}</p>
+              <p className="text-2xl font-bold leading-8 ">{blog.title}</p>
             </Link>
             <p className="mb-4 text-gray-700">
               {blog.BlogDescription}
