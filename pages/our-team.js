@@ -31,21 +31,21 @@ export default function OurTeam() {
               duration: .3
             }
           }}>
-        <div class="px-12 py-8 transition-colors duration-300 transform border rounded-xl md:hover:border-transparent group md:hover:bg-blue-600 dark:border-gray-700 dark:md:hover:border-transparent">
+        <div class="px-12 py-8 transition-colors duration-300 transform border rounded-xl md:hover:border-transparent group md:hover:bg-blue-600 dark:border-gray-700 dark:md:hover:border-transparent hover:border-transparent ">
                 <div class="flex flex-col sm:-mx-4 sm:flex-row">
                     <Image class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="https://cdn.sanity.io/images/7nf84oj6/production/dc4a58ccc6ffc0623010afc98a26bd1a64f2354c-900x900.jpg" height={1000} width={1000} alt=""/>
 
                     <div class="mt-4 sm:mx-4 sm:mt-0">
-                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-md:hover:text-white">Nikunj Goyal</h1>
+                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white md:group-hover:text-white">Nikunj Goyal</h1>
 
-                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">Developer</p>
+                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">Developer</p>
                     </div>
                 </div>
 
-                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">As the lead developer, He has meticulously crafted the technical foundation of the platform, ensuring its seamless functionality and optimal performance.</p>
+                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">As the lead developer, He has meticulously crafted the technical foundation of the platform, ensuring its seamless functionality and optimal performance.</p>
 
                 <div class="flex mt-4 -mx-2">
-                    <a href="https://github.com/nikunjthebest" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 md:hover:text-gray-500 dark:md:hover:text-gray-300 group-md:hover:text-white" aria-label="Github">
+                    <a href="https://github.com/nikunjthebest" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 md:hover:text-gray-500 dark:md:hover:text-gray-300 md:group-hover:text-white" aria-label="Github">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -73,17 +73,17 @@ export default function OurTeam() {
                     <Image class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="https://cdn.sanity.io/images/7nf84oj6/production/58df641b4db86e24610e8c01349ae24730c99145-540x360.jpg" width={1000} height={1000} alt=""/>
 
                     <div class="mt-4 sm:mx-4 sm:mt-0">
-                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-md:hover:text-white">Arhaan Khan</h1>
+                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white md:group-hover:text-white">Arhaan Khan</h1>
 
-                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">Co-Developer</p>
+                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">Co-Developer</p>
                     </div>
                 </div>
 
-                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">Passionate co-developer with a knack for crafting seamless web experiences. Adept at turning design visions into functional code and collaborating with precision.</p>
+                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">Passionate co-developer with a knack for crafting seamless web experiences. Adept at turning design visions into functional code and collaborating with precision.</p>
 
                 <div class="flex mt-4 -mx-2">
 
-                    <Link href="https://github.com/Arhaaxxx" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 md:hover:text-gray-500 dark:md:hover:text-gray-300 group-md:hover:text-white" aria-label="Github">
+                    <Link href="https://github.com/Arhaaxxx" target="_blank" class="mx-2 text-gray-600 dark:text-gray-300 md:hover:text-gray-500 dark:md:hover:text-gray-300 md:group-hover:text-white" aria-label="Github">
                         <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -110,13 +110,13 @@ export default function OurTeam() {
                 <div class="flex flex-col sm:-mx-4 sm:flex-row">
                     <Image class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="https://cdn.sanity.io/images/7nf84oj6/production/6d35b9c3cb2f99fe2a527289bdb480074d211bc2-1217x1600.jpg" width={1000} height={1000} alt=""/>
                     <div class="mt-4 sm:mx-4 sm:mt-0">
-                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-md:hover:text-white">Ali Atiyab Husain</h1>
+                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white md:group-hover:text-white">Ali Atiyab Husain</h1>
 
-                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">Content Writer</p>
+                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">Content Writer</p>
                     </div>
                 </div>
 
-                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">Innovative AI content writer generating dynamic and relevant articles with precision. Seamlessly integrates data-driven insights into captivating narratives.</p>
+                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">Innovative AI content writer generating dynamic and relevant articles with precision. Seamlessly integrates data-driven insights into captivating narratives.</p>
 
             </div>
             </motion.div>
@@ -139,14 +139,14 @@ export default function OurTeam() {
                     <Image class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="https://cdn.sanity.io/images/7nf84oj6/production/262f2f7cc9eaf8e0843308a643d1b8f9ccc46f47-220x286.jpg" height={1000} width={1000} alt=""/>
 
                     <div class="mt-4 sm:mx-4 sm:mt-0">
-                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-md:hover:text-white">Hrishit S</h1>
+                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white md:group-hover:text-white">Hrishit S</h1>
 
-                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">Content Writer</p>
+                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">Content Writer</p>
                     </div>
                 </div>
 
 
-                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">AI content writer here to help you on various topics - with the emerging advancements and constant breakthroughs, his blogs provide much needed information and updates.</p>
+                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">AI content writer here to help you on various topics - with the emerging advancements and constant breakthroughs, his blogs provide much needed information and updates.</p>
 
             </div>
             </motion.div>
@@ -170,13 +170,13 @@ export default function OurTeam() {
                     <Image class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="https://cdn.sanity.io/images/7nf84oj6/production/214b077ded383ac7a2dbf1d845a4d27c365b44de-180x281.jpg" width={1000} height={1000} alt=""/>
 
                     <div class="mt-4 sm:mx-4 sm:mt-0">
-                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white group-md:hover:text-white">Utkarsh Rawat</h1>
+                        <h1 class="text-xl font-semibold text-gray-700 capitalize md:text-2xl dark:text-white md:group-hover:text-white">Utkarsh Rawat</h1>
 
-                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">Content Writer</p>
+                        <p class="mt-2 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">Content Writer</p>
                     </div>
                 </div>
 
-                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 group-md:hover:text-gray-300">Creative content writer skilled in weaving words that captivate and inform. Expert at tailoring engaging narratives to diverse audiences. Committed to delivering compelling stories that resonate and enrich the blogging platform.</p>
+                <p class="mt-4 text-gray-500 capitalize dark:text-gray-300 md:group-hover:text-gray-300">Creative content writer skilled in weaving words that captivate and inform. Expert at tailoring engaging narratives to diverse audiences. Committed to delivering compelling stories that resonate and enrich the blogging platform.</p>
             </div>
             </motion.div>
 
