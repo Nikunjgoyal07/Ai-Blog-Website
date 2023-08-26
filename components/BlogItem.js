@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 export default function BlogItem({ blog }) {
   const date = new Date(blog._createdAt);
@@ -7,7 +8,16 @@ export default function BlogItem({ blog }) {
             month: "long",
           })} ${date.getFullYear()}`;
     return (
-        <div className="overflow-hidden transition-shadow duration-300 bg-white rounded">
+      <motion.div
+           whileHover={{
+            position: 'relative',
+            zIndex: 1,
+            scale: [1, 1.05],
+            transition: {
+              duration: .3
+            }
+          }}>
+        <div className="overflow-hidden transition-shadow duration-300 dark:text-white rounded">
 
 <Link href={`/blogpost/${blog.slug.current}`} aria-label="Article">
         
@@ -20,18 +30,18 @@ export default function BlogItem({ blog }) {
           />
         
       </Link>
-          <div className="py-5">
-            <p className="mb-2 text-xs font-semibold text-gray-600 uppercase">
+          <div className="py-5 bg-white dark:bg-gray-900" >
+            <p className="mb-2 text-xs font-semibold text-gray-400 uppercase">
               {formattedDate}
             </p>
             <Link
               href={`/blogpost/${blog.slug.current}`}
               aria-label="Article"
-              className="inline-block mb-3 text-black transition-colors duration-200 hover:text-deep-purple-accent-700"
+              className="inline-block mb-3 text-black dark:text-white transition-colors duration-200 hover:text-deep-purple-accent-700"
             >
               <p className="text-2xl font-bold leading-8 ">{blog.title}</p>
             </Link>
-            <p className="mb-4 text-gray-700">
+            <p className="mb-4 text-gray-400">
               {blog.BlogDescription}
             </p>
             <p className="mt-4 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 hover:underline font-medium">
@@ -44,5 +54,6 @@ export default function BlogItem({ blog }) {
           </p>
           </div>
         </div>
+        </motion.div>
     );
 }

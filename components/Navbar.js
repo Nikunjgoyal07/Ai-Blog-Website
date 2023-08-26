@@ -15,7 +15,7 @@ export default function Navbar() {
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             
               <h2 className="text-2xl text-white font-bold"><Link href="/">
-                  Home
+                  Amethy blogs
                 </Link></h2>
             
             <div className="md:hidden">
@@ -62,18 +62,18 @@ export default function Navbar() {
               navbar ? 'block' : 'hidden'
             }`}
           >
-            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-              <li className="text-white">
+            <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0 ">
+              <li className="text-white hover:underline">
                 <Link href="/">
                   Home
                 </Link>
               </li>
-              <li className="text-white">
+              <li className="text-white hover:underline">
                 <Link href="/blogs">
                   Blogs
                 </Link>
               </li>
-              <li className="text-white">
+              <li className="text-white hover:underline">
                 <Link href="/our-team">
                   Our Team
                 </Link>

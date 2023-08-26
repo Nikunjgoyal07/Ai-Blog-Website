@@ -2,3 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --bg-color: white; /* Default background color */
+    --text-color: black; /* Default text color */
+  }
+
+@media (prefers-color-scheme: dark) {
+    :root {
+      --bg-color: rgba(17, 24, 39, 1); /* Dark mode background color */
+      --text-color: white; /* Dark mode text color */
+    }
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+  
