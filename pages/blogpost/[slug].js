@@ -11,7 +11,7 @@ export default function Slug({blogs}) {
   // }
 
   return (
-    <Blogcontent title={blogs.title} content={blogs.content} _createdAt={blogs._createdAt} imageUrl={blogs.imageUrl} />
+    <Blogcontent title={blogs.title} content={blogs.content} _createdAt={blogs._createdAt} imageUrl={blogs.imageUrl}/>
   );
 }
 

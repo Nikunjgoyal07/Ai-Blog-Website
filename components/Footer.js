@@ -14,7 +14,7 @@ export default function Footer() {
       
           <div className="mt-5 sm:mt-12 grid gap-y-2 sm:gap-y-0 sm:flex sm:justify-between sm:items-center">
             <div className="flex justify-between items-center">
-              <p className="text-sm text-gray-400">© 2023 Amethy. All rights reserved.</p>
+              <p className="text-sm text-gray-400">© 2023 Technit<span style={{color : "#884ffb"}}>ó</span>s. All rights reserved.</p>
             </div>
             <div>
               <a className="inline-flex justify-center items-center gap-x-3.5 w-10 h-10 text-center text-gray-200 hover:bg-white/[.1] rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-gray-900 transition" href="#">

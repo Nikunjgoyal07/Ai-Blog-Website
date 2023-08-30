@@ -8,7 +8,7 @@ export default function OurTeam() {
     <section class="bg-white dark:bg-gray-900 lg:mx-24">
         
         <Head>
-        <title>Our Team</title>
+        <title>Technitós: Our Team</title>
       </Head>
     <div class="container px-6 py-10 mx-auto">
         <h1 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">Our <span class="text-blue-500">Talented Team</span></h1>
@@ -68,7 +68,7 @@ export default function OurTeam() {
               duration: .3
             }
           }}>
-        <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl md:hover:border-transparent group md:hover:bg-blue-600 dark:border-gray-700 dark:md:hover:border-transparent">
+        <div class="px-12 py-8 transition-colors duration-300 transform border rounded-xl md:hover:border-transparent group md:hover:bg-blue-600 dark:border-gray-700 dark:md:hover:border-transparent">
                 <div class="flex flex-col sm:-mx-4 sm:flex-row">
                     <Image class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="https://cdn.sanity.io/images/7nf84oj6/production/58df641b4db86e24610e8c01349ae24730c99145-540x360.jpg" width={1000} height={1000} alt=""/>
 
@@ -165,7 +165,7 @@ export default function OurTeam() {
               duration: .3
             }
           }}>
-            <div class="px-12 py-8 transition-colors duration-300 transform border cursor-pointer rounded-xl md:hover:border-transparent group md:hover:bg-blue-600 dark:border-gray-700 dark:md:hover:border-transparent">
+            <div class="px-12 py-8 transition-colors duration-300 transform border rounded-xl md:hover:border-transparent group md:hover:bg-blue-600 dark:border-gray-700 dark:md:hover:border-transparent">
                 <div class="flex flex-col sm:-mx-4 sm:flex-row">
                     <Image class="flex-shrink-0 object-cover w-24 h-24 rounded-full sm:mx-4 ring-4 ring-gray-300" src="https://cdn.sanity.io/images/7nf84oj6/production/214b077ded383ac7a2dbf1d845a4d27c365b44de-180x281.jpg" width={1000} height={1000} alt=""/>
 

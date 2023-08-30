@@ -8,6 +8,8 @@ export default function App({ Component, pageProps }) {
   <Head>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4208857816426904"
      crossorigin="anonymous"></script>
+       <link rel="icon" href="/o3.png" />
+
   </Head>
   <Navbar />
   <Component {...pageProps} />

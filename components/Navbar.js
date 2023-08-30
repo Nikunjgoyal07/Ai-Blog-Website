@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { useRouter } from 'next/router';
 import { useState } from 'react';
 
@@ -13,11 +14,11 @@ export default function Navbar() {
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
-            
-              <h2 className="text-2xl text-white font-bold"><Link href="/">
-                  Amethy blogs
-                </Link></h2>
-            
+            <div className='flex items-center '>
+                {/* <Image src="/logo.png" width={75} height={75} alt="Technitós" /> */}
+                <Link href="/">
+              <h2 className="text-2xl font-bold leading-none text-white lg:text-3xl pt-2">Technit<span style={{color : "#884ffb"}}>ó</span>s</h2>
+              </Link></div>
             <div className="md:hidden">
               <button
                 className="p-2 text-gray-700 rounded-md outline-none focus:border-gray-400 focus:border"

@@ -59,7 +59,8 @@ export default function Blogcontent(props) {
         <time dateTime="2021-02-12 15:34:18-0200">{formattedDate}</time>
       </div>
       <Head>
-        <title>{props.title}</title>
+        <title> Technitós: {props.title}</title>
+        <meta description={props.title}/>
       </Head>
       {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4208857816426904"
      crossorigin="anonymous" /> */}
