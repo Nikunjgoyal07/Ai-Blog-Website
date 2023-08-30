@@ -5,7 +5,7 @@ export default function Home() {
 <>
         <Head>
           <title>Technitós</title>
-        <meta description="A guide into AI"/>
+        <meta name="description" content="A guide into AI"/>
         </Head>
         <motion.div
            whileHover={{

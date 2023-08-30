@@ -60,7 +60,8 @@ export default function Blogcontent(props) {
       </div>
       <Head>
         <title> Technitós: {props.title}</title>
-        <meta description={props.title}/>
+        <meta name="description" content={props.title}/>
+        <meta property="og:image" content={props.imageUrl} />   
       </Head>
       {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4208857816426904"
      crossorigin="anonymous" /> */}

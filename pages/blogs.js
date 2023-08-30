@@ -9,6 +9,8 @@ export default function Blogs({ blogs }) {
     <div class="max-w-[85rem] px-4 pt-14 sm:px-6 lg:px-8 lg:pt-14 mx-auto">
       <Head>
         <title>Technitós</title>
+        <meta name="description" content="A guide into AI"></meta>
+        <meta property="og:image" content="https://technitos.netlify.app/logo.png" /> 
       </Head>
   <div class="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
     <h2 class="text-2xl font-bold md:text-4xl md:leading-tight ">Read our latest news</h2>
