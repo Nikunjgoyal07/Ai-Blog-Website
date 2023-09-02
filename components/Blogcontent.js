@@ -1,7 +1,5 @@
 import Image from "next/image";
 import { PortableText } from "@portabletext/react";
-import Head from "next/head";
-// import Script from "next/script";
 
 export default function Blogcontent(props) {
   const date = new Date(props._createdAt);
@@ -53,18 +51,13 @@ export default function Blogcontent(props) {
     },
   };
   return (
+    <>
     <article className="max-w-4xl px-6 py-24 mx-auto space-y-12 ">
       <div className="w-full mx-auto space-y-4 text-center">
         <h1 className="text-4xl font-bold leadi md:text-5xl font-sans mb-3">{props.title}</h1>
         <time dateTime="2021-02-12 15:34:18-0200">{formattedDate}</time>
       </div>
-      <Head>
-        <title> Technitós: {props.title}</title>
-        <meta name="description" content={props.title}/>
-        <meta property="og:image" content={props.imageUrl} />   
-      </Head>
-      {/* <Script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4208857816426904"
-     crossorigin="anonymous" /> */}
+      
 	  <Image
           src={props.imageUrl}
           className="object-cover w-full rounded "
@@ -74,6 +67,8 @@ export default function Blogcontent(props) {
       <div >
         <PortableText value={props.content} components={components} />
       </div>
+    <div>OUR MORE BLOGS</div>
     </article>
+    </>
   );
 }

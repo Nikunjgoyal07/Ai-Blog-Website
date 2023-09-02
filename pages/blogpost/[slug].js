@@ -2,8 +2,10 @@ import Blogcontent from '@/components/Blogcontent';
 import { useRouter } from 'next/router';
 import { createClient } from "@sanity/client";
 import imageUrlBuilder from "@sanity/image-url";
+import Head from 'next/head';
 
 export default function Slug({blogs}) {
+  console.log(blogs);
   const router = useRouter();
   // if (!data) {
   //   router.replace('/404');
@@ -11,7 +13,15 @@ export default function Slug({blogs}) {
   // }
 
   return (
+    <>
+    <Head>
+        <title> Technitós: {blogs.title}</title>
+        <meta name="description" content={blogs.BlogDescription}/>
+        <meta property="og:image" content={blogs.imageUrl} />   
+      </Head>
     <Blogcontent title={blogs.title} content={blogs.content} _createdAt={blogs._createdAt} imageUrl={blogs.imageUrl}/>
+    
+    </>
   );
 }
 
