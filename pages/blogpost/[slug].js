@@ -32,6 +32,8 @@ export async function getServerSideProps(context) {
     projectId: "7nf84oj6",
     dataset: "production",
     useCdn: true,
+    apiVersion: '2023-08-14',
+    token: process.env.SANITY_SECRET_TOKEN
   });
 
   const query = '*[_type == "blog" && slug.current == $slug][0]';

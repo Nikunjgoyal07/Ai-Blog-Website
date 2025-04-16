@@ -6,15 +6,15 @@ import Head from "next/head";
 export default function Blogs({ blogs }) {
   return (
     <>
-    <div class="max-w-[85rem] px-4 pt-14 sm:px-6 lg:px-8 lg:pt-14 mx-auto">
+    <div className="max-w-[85rem] px-4 pt-14 sm:px-6 lg:px-8 lg:pt-14 mx-auto">
       <Head>
         <title>Technitós</title>
         <meta name="description" content="A guide into AI"></meta>
         <meta property="og:image" content="https://technitos.netlify.app/logo.png" /> 
       </Head>
-  <div class="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
-    <h2 class="text-2xl font-bold md:text-4xl md:leading-tight ">Read our latest news</h2>
-    <p class="mt-1 text-gray-600">We&apos;ve helped some great companies brand, design and get to market.</p>
+  <div className="max-w-2xl text-center mx-auto mb-10 lg:mb-14">
+    <h2 className="text-2xl font-bold md:text-4xl md:leading-tight ">Read our latest news</h2>
+    <p className="mt-1 text-gray-600">We&apos;ve helped some great companies brand, design and get to market.</p>
   </div>
   </div>
     <div className="px-7 py-4 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-2 ">
